@@ -1,0 +1,71 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** ======== *****/
+/***** Caution  *****/
+/***** ======== *****/
+
+$size: 300px;
+$timing: 0.35s ease-in-out;
+
+.D3Icon {
+	width: $size;
+	height: $size;
+	background-color: $green;
+	color: $white;
+	font-size: 3rem;
+	position: relative;
+	display: inline-block;
+	padding: 15px 15px;
+	cursor: pointer;
+	transform:
+		scale(0.75)
+		rotateY(-30deg)
+		rotateX(45deg)
+		translateZ(6rem);
+	transform-origin: 50% 100%;
+	transform-style: preserve-3d;
+	box-shadow: 1rem 1rem 2rem rgba($white,0.25);
+	transition: $timing;
+
+	&:hover {
+		transform:
+			scale(0.75)
+			rotateY(-30deg)
+			rotateX(45deg)
+			translateZ(4.5rem);
+ 	}
+
+	&::before {
+		content: ' ';
+		width: $size;
+		height: $size;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 2px $white;
+		background-color: transparent;
+		transform: translateZ(2rem);
+		transition: $timing;
+		
+	}
+	&:hover::before {
+		transform: translateZ(5rem);
+	}
+
+	&::after {
+		content: ' ';
+	  	width: $size;
+		height: $size;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 2px $green;
+		background-color: $black;
+	    	transform: translateZ(-2rem);
+	    	transition: $timing;
+	  }
+	  &:hover::after {
+	  	transform: translateZ(-5rem);
+	  }
+}

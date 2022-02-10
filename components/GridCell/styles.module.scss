@@ -1,0 +1,36 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** ========== *****/
+/***** GridCell  *****/
+/***** ========== *****/
+
+.outer{
+	width: 33.333%;
+	height: 33.333vh;
+	padding: 35px;
+	position: relative;
+}
+
+.inner{
+	border: solid 5px $green;
+	position: relative;
+}
+
+.heading{
+	background-color: $green;
+	color: $white;
+	//font-family: $font_display;
+	font-size: 20px;
+	line-height:1;
+	text-align: center;
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+.content{
+	padding: 15px;
+}
+
+
+

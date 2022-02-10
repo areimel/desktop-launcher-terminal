@@ -1,0 +1,15 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** ========== *****/
+/***** Bookmarks  *****/
+/***** ========== *****/
+
+.Bookmarks{
+	.list{
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}

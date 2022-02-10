@@ -1,0 +1,19 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** ======== *****/
+/***** Caution  *****/
+/***** ======== *****/
+
+.Caution{
+	background-color: transparent;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, $green 15px, $green 30px);
+	padding: 15px;
+	text-align: center;
+
+	.inner{
+		background-color: $white;
+		color: $black;
+		padding: 15px;
+	}
+}
