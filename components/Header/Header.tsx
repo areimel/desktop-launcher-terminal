@@ -8,12 +8,14 @@ export default function Header({
     <nav className={styles.Header}>
       <div>
         <header>
-          <h1>Sandoz Computing Institute</h1>
-          <ul>
-            <li>A better way to think.</li>
-            <li>A better way to live.</li>
-            <li>A better way to be.</li>
-          </ul>
+          <h1 className={styles.logo}>
+            Sandoz Computing Institute
+          </h1>
+          {/*<ul>
+            <li>A better way to Think.</li>
+            <li>A better way to Live.</li>
+            <li>A better way to Be.</li>
+          </ul>*/}
         </header>
       </div>
     </nav>

@@ -7,8 +7,8 @@
   "private": false,
   "license": "Unlicense",
   "scripts": {
-    "init-setup": "npm install && npm audit fix && next build",
-    "dev": "next dev",
+    "init-setup": "npm ci && npm audit fix && next build",
+    "dev": "next dev -p 3003",
     "dev-alt": "next dev -p 3001",
     "build": "next build",
     "start": "next start",

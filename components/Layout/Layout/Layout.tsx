@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Head from 'next/head'
 import MasterJS from '@components/Layout/MasterJS/MasterJS'
 import MasterCSS from '@components/Layout/MasterCSS/MasterCSS'
+import Header from '@components/Header'
 
 
 const Cell = styled.div`
@@ -26,15 +27,12 @@ export default function Layout({
 			<div className={styles.overlay}></div>
 
 			<main className={styles.layoutOuter} >
-				{/*<Heading>
-				  <HeadingMain/>
-				  <ThemeSelector/>
-				</Heading>*/}
-	  		<div className={styles.layoutInner}>
+				<Header/>
+	  			<div className={styles.layoutInner}>
 	  			
-	  			{children}
+	  				{children}
 
-	  		</div>
+	  			</div>
 			</main>
 			<MasterJS/>
 		</>

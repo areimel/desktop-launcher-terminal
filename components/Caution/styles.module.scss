@@ -10,6 +10,11 @@
 	background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, $green 15px, $green 30px);
 	padding: 15px;
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	.inner{
 		background-color: $white;

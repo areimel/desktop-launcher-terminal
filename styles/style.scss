@@ -57,7 +57,7 @@ GENERAL
 		}
 
 		body{
-			overflow-x: hidden;
+			/*overflow-x: hidden;
 			max-width: 100%;
 			color: $primary_color;
 			font-family: $font_body, "system", monospace;
@@ -67,8 +67,9 @@ GENERAL
 			letter-spacing: 0.005em;
 			min-height: 100vh;
 			background-color: $background_color;
+			height: 100%;
 			margin: 0;
-			padding: 0;
+			padding: 0;*/
 
 			//background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
 			/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -166,6 +167,13 @@ html {
 	letter-spacing: 0.05em;
 }
 
+@font-face {
+	font-family: "8-bit-hud";
+	src: url("/fonts/8-bit-hud.ttf") format("ttf");
+	font-weight: 100;
+	font-display: fallback;
+}
+
 body {
 	box-sizing: border-box;
 	height: 100%;
@@ -174,7 +182,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: fixed;
-	font-family: 'Press Start 2P';
+	font-family: $font_body;
 	color: $green;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	//letter-spacing: 0.005em;
+	margin: 0;
+	padding: 0;
 	text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255,255,255,0.8);
 }

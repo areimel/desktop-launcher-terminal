@@ -20,10 +20,10 @@ const Cell = styled.div`
   }
 
   &.dynamicWidth{
-	width: calc(100% -  ${props => props.fixedWidth});
-	@media only screen and (max-width : 1200px) { 
-		width: 100%;
-	}
+		width: calc(100% -  ${props => props.fixedWidth});
+		@media only screen and (max-width : 1200px) { 
+			width: 100%;
+		}
   }
 
 `;

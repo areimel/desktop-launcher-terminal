@@ -7,6 +7,7 @@ import Bookmarks from '@components/Bookmarks'
 import LocalApps from '@components/LocalApps'
 import Caution from '@components/Caution'
 import D3Icon from '@components/D3Icon'
+import Dashboard from '@components/Dashboard'
 
 
 //VARS
@@ -48,8 +49,10 @@ export default function Home(props) {
       <Head>
         <title>Terminal Launcher</title>
       </Head>
+     
 
-      <ContentGrid>
+      {/*<ContentGrid>
+
         <GridCell heading="Bookmarks" classname="">
           <Bookmarks/>
         </GridCell>
@@ -61,9 +64,7 @@ export default function Home(props) {
         <GridCell heading="TO DO" classname="">
           <Caution>UNDER CONSTRUCTION</Caution>
         </GridCell>
-      </ContentGrid>
 
-      <ContentGrid>
         <GridCell heading="3D Transforms" classname="">
           <D3Icon></D3Icon>
         </GridCell>
@@ -75,11 +76,11 @@ export default function Home(props) {
         <GridCell heading="Date &amp; Weather" classname="">
           <Caution>UNDER CONSTRUCTION</Caution>
         </GridCell>
-      </ContentGrid>
 
-      
+      </ContentGrid>*/}
+
         
-
+      <Dashboard/>
 
        
           
