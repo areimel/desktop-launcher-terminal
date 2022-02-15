@@ -3,10 +3,13 @@
 import Head from 'next/head'
 import ContentGrid from '@components/ContentGrid'
 import GridCell from '@components/GridCell'
-import Bookmarks from '@components/Bookmarks'
-import LocalApps from '@components/LocalApps'
-import Caution from '@components/Caution'
-import D3Icon from '@components/D3Icon'
+//import Bookmarks from '@components/Bookmarks'
+//import LocalApps from '@components/LocalApps'
+//import DateTime from '@components/DateTime'
+//import Caution from '@components/Caution'
+//import D3Icon from '@components/D3Icon'
+
+// module components moved inside Dashboard component
 import Dashboard from '@components/Dashboard'
 
 

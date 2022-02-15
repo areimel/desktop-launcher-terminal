@@ -5,6 +5,7 @@ import Bookmarks from '@components/Bookmarks'
 import LocalApps from '@components/LocalApps'
 import Caution from '@components/Caution'
 import DotBG from '@components/DotBG'
+import DateTime from '@components/DateTime'
 
 
 const Component = styled.div`
@@ -45,7 +46,9 @@ export default function Dashboard({
         className={styles.Cell}
         width="60%"
       >
-        <DotBG>DATE/TIME/WEATHER</DotBG>
+        <DotBG>
+          <DateTime/>
+        </DotBG>
       </Cell>
 
       <Cell 
