@@ -52,8 +52,9 @@ export default function Home(props) {
       <Head>
         <title>Terminal Launcher</title>
       </Head>
-     
 
+      <Dashboard/>
+     
       {/*<ContentGrid>
 
         <GridCell heading="Bookmarks" classname="">
@@ -81,35 +82,6 @@ export default function Home(props) {
         </GridCell>
 
       </ContentGrid>*/}
-
-        
-      <Dashboard/>
-
-       
-          
-          {/*<GridCell>
-            <Bookmarks/>
-          </GridCell>
-
-          <GridCell>
-            <AppLauncher/>
-          </GridCell>
-
-          <GridCell>
-            <Time/>
-            <CustomHR/>
-            <Weather/>
-          </GridCell>
-
-          <GridCell>
-            <ToDo/>
-          </GridCell>
-
-          <GridCell>
-            <IncomingMessage/>
-          </GridCell>*/}
-
-        
      
     </>
   )

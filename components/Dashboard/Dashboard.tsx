@@ -6,6 +6,8 @@ import LocalApps from '@components/LocalApps'
 import Caution from '@components/Caution'
 import DotBG from '@components/DotBG'
 import DateTime from '@components/DateTime'
+import Weather from '@components/Weather'
+import FilterImage from '@components/FilterImage'
 
 
 const Component = styled.div`
@@ -31,7 +33,7 @@ export default function Dashboard({
         width="20%"
       >
         <h2>Bookmarks</h2>
-        <Bookmarks/>
+        <Bookmarks subSet="web" />
       </Cell>
 
       <Cell 
@@ -48,28 +50,39 @@ export default function Dashboard({
       >
         <DotBG>
           <DateTime/>
+          {/*<Weather/>*/}
         </DotBG>
       </Cell>
 
       <Cell 
         className={styles.Cell}
-        width="50%"
+        width="40%"
       >
-        <Caution>DEV TOOLS</Caution>
+        <FilterImage
+          image="/img/daily-img/given-1.jpg"
+        />
       </Cell>
 
       <Cell 
         className={styles.Cell}
-        width="25%"
+        width="20%"
       >
-        <Caution>DEV PROJECTS</Caution>
+        <h2>DEV LINKS</h2>
+        <Bookmarks subSet="dev" />
       </Cell>
 
       <Cell 
         className={styles.Cell}
-        width="25%"
+        width="20%"
       >
-        <Caution>TO DO</Caution>
+        <Caution>MUSIC LINKS</Caution>
+      </Cell>
+
+      <Cell 
+        className={styles.Cell}
+        width="20%"
+      >
+        <Caution>ART LINKS</Caution>
       </Cell>
 
     </Component>

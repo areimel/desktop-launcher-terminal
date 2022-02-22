@@ -28,3 +28,10 @@
 * https://www.behance.net/gallery/26464047/Typographic-Film-Advertising-
 * https://www.behance.net/gallery/110671027/CYBERPUNK-2077-UI-CONCEPT-LOOK-DEV
 * https://codepen.io/edmundojr/pen/xOYJGw
+
+### Electron App Resources ###
+* https://stackoverflow.com/questions/63697768/application-launcher-using-an-electron-js-app
+* https://www.reddit.com/r/electronjs/comments/hen07p/first_electron_app_released_multi_application/
+* https://www.electronjs.org/fiddle
+* https://github.com/monsterkodi/kappo
+* https://angrykoala.github.io/gaucho/
