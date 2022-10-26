@@ -13,17 +13,17 @@ export default function DateTime({
           format={'dddd'}
           timezone={'America/New_York'} 
           //check date every 2hrs
-          interval={7200000} ticking={true}
+          interval={7200000} ticking={false}
         />
         <span>,</span>
       </div>
 
       <div className={styles.cell +' '+ styles.month}>
         <Clock
-          format={'MMMM Mo, YYYY'}
+          format={'MMMM Do, YYYY'}
           timezone={'America/New_York'} 
           //check date every 24hrs
-          interval={86400000} ticking={true}
+          interval={86400000} ticking={false}
         />
       </div>
 

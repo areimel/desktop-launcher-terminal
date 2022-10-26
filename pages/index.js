@@ -55,34 +55,6 @@ export default function Home(props) {
 
       <Dashboard/>
      
-      {/*<ContentGrid>
-
-        <GridCell heading="Bookmarks" classname="">
-          <Bookmarks/>
-        </GridCell>
-
-        <GridCell heading="Local Apps" classname="">
-          <LocalApps/>
-        </GridCell>
-
-        <GridCell heading="TO DO" classname="">
-          <Caution>UNDER CONSTRUCTION</Caution>
-        </GridCell>
-
-        <GridCell heading="3D Transforms" classname="">
-          <D3Icon></D3Icon>
-        </GridCell>
-
-        <GridCell heading="Dev Tools" classname="">
-          <Caution>UNDER CONSTRUCTION</Caution>
-        </GridCell>
-
-        <GridCell heading="Date &amp; Weather" classname="">
-          <Caution>UNDER CONSTRUCTION</Caution>
-        </GridCell>
-
-      </ContentGrid>*/}
-     
     </>
   )
 }

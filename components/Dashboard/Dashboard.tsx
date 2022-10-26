@@ -28,7 +28,7 @@ export default function Dashboard({
     <Component 
       className={ styles.Component +' '+ classname}
     >
-      <Cell 
+      {/*<Cell 
         className={styles.Cell}
         width="20%"
       >
@@ -42,16 +42,23 @@ export default function Dashboard({
       >
         <h2>Local Apps</h2>
         <LocalApps/>
-      </Cell>
+      </Cell>*/}
 
       <Cell 
         className={styles.Cell}
-        width="60%"
+        width="50%"
       >
         <DotBG>
           <DateTime/>
           {/*<Weather/>*/}
         </DotBG>
+      </Cell>
+
+      <Cell 
+        className={styles.Cell}
+        width="50%"
+      >
+        <Weather/>
       </Cell>
 
       <Cell 
@@ -67,6 +74,14 @@ export default function Dashboard({
         className={styles.Cell}
         width="20%"
       >
+        <h2>WEB LINKS</h2>
+        <Bookmarks subSet="web" />
+      </Cell>
+
+      <Cell 
+        className={styles.Cell}
+        width="20%"
+      >
         <h2>DEV LINKS</h2>
         <Bookmarks subSet="dev" />
       </Cell>
@@ -76,13 +91,6 @@ export default function Dashboard({
         width="20%"
       >
         <Caution>MUSIC LINKS</Caution>
-      </Cell>
-
-      <Cell 
-        className={styles.Cell}
-        width="20%"
-      >
-        <Caution>ART LINKS</Caution>
       </Cell>
 
     </Component>

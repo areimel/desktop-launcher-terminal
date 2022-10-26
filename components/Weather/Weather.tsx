@@ -1,7 +1,14 @@
 import styles from './styles.module.scss'
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
 
-const { data, isLoading, errorMessage } = useOpenWeather({
+
+
+export default function Weather({ 
+	children,
+  className,
+}) {
+
+  const { data, isLoading, errorMessage } = useOpenWeather({
     key: '359ee762ac121057ddc8fc321cb0c8da',
     lat: '40.304640',
     lon: '-75.127194',
@@ -9,10 +16,26 @@ const { data, isLoading, errorMessage } = useOpenWeather({
     unit: 'imperial', // values are (metric, standard, imperial)
   });
 
-export default function Weather({ 
-	children,
-  className,
-}) {
+    const customStyles = {
+      fontFamily:  'commodore_64_pixelizedregular',
+      gradientStart:  'transparent',
+      gradientMid:  'transparent',
+      gradientEnd:  'transparent',
+      locationFontColor:  '#FFF',
+      todayTempFontColor:  '#FFF',
+      todayDateFontColor:  '#fff',
+      todayRangeFontColor:  '#fff',
+      todayDescFontColor:  '#fff',
+      todayInfoFontColor:  '#fff',
+      todayIconColor:  'rgba(128,255,128,0.8)',
+      forecastBackgroundColor:  'transparent',
+      forecastSeparatorColor:  'rgba(128,255,128,0.8)',
+      forecastDateColor:  '#fff',
+      forecastDescColor:  '#fff',
+      forecastRangeColor:  '#fff',
+      forecastIconColor:  'rgba(128,255,128,0.8)',
+    };
+
   return (
     <div className={styles.Weather}>
       <ReactWeather
@@ -20,9 +43,10 @@ export default function Weather({
         errorMessage={errorMessage}
         data={data}
         lang="en"
-        locationLabel="Doylestown"
+        locationLabel="Doylestown, PA"
         unitsLabels={{ temperature: 'F', windSpeed: 'mph' }}
         showForecast
+        theme={customStyles}
       />    
     </div>
   )
