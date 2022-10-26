@@ -9,9 +9,9 @@ export default function Header({
       <div>
         <header>
           <h1 className={styles.logo}>
-            Saturn V
+            Planet Caravan Studios
           </h1>
-          <p>COMMAND MODULE</p>
+          <p>DASHBOARD COMMAND MODULE</p>
           {/*<ul>
             <li>A better way to Think.</li>
             <li>A better way to Live.</li>
