@@ -6,16 +6,18 @@
 /***** ======== *****/
 
 // Colors
-$bg-color: $black;
-$dot-color: $green;
+$bg-color: $themeColorDark;
+$dot-color: $themeColorMain;
 
 // Dimensions
 $dot-size: 2px;
 $dot-space: 15px;
 
 .DotBG{
-background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
-	background-size: $dot-space $dot-space;	padding: 15px;
+	background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+	background-size: $dot-space $dot-space;	
+	backdrop-filter: opacity(0.5);
+	padding: 15px;
 	text-align: center;
 	width: 100%;
 	height: 100%;

@@ -8,14 +8,16 @@
 .Component{
 	display: flex;
 	flex-wrap: wrap;
-	border-top: solid 2px $green;
-	border-left: solid 2px $green;
+	border-top: solid 2px $themeColorLight;
+	border-left: solid 2px $themeColorLight;
+	box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
 }
 
 .Cell{
 	position: relative;
-	border-bottom: solid 2px $green;
-	border-right: solid 2px $green;
+	border-bottom: solid 2px $themeColorLight;
+	border-right: solid 2px $themeColorLight;
+	box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
 	padding: 35px;
 	/*display: flex;
 	flex-direction: column;
@@ -29,8 +31,8 @@
 }
 
 .heading{
-	background-color: $green;
-	color: $white;
+	background-color: $themeColorMain;
+	color: $themeWhite;
 	//font-family: $font_display;
 	font-size: 20px;
 	line-height:1;

@@ -7,19 +7,35 @@ Description:	Store SCSS vars here
 **************************************************/
 
 
-/***** Color Variables *****/
-	$black: 		#11581e;
-	$white: 		#fafafa;
-	$green:		rgba(128,255,128,0.8);
+/***** Color Variables - Default Theme: Green *****/
+	$black: 	#11581e;
+	$greenDark: 	#11581e;
+	$blackGreen: 	#041607;
+	$white: 			#fafafa;
+	$green:			rgba(128,255,128,0.8);
+
+	/***** Amber Theme *****/
+	$blackAmber: 	#282828;
+	$whiteAmber: 	#FAFAFA;
+	$amber:			#FFB000;
+	$amberLight:	#FFC000;
+	$amberDark:	#8c5b08;
 
 	/***** Named Colors *****/
 		//only use other vars
-		$primary_color:			$black;
-		$secondary_color:		$white;
+		$primary_color:			$blackAmber;
+		$secondary_color:		$whiteAmber;
 
-		$background_color:	$white;
-		$text_color:				$green;
-		$accent_color:			$white;
+		$background_color:	$whiteAmber;
+		$text_color:				$amber;
+		$theme_color:			$amber;
+		$accent_color:			$whiteAmber;
+
+		$themeBlack: 				$blackAmber;
+		$themeWhite: 				$whiteAmber;
+		$themeColorMain: 		$amber;
+		$themeColorDark: 		$amberDark;
+		$themeColorLight: 		$amberLight;
 
 
 /***** Fonts *****/

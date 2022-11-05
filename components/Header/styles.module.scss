@@ -6,8 +6,10 @@
 /***** ========== *****/
 
 .Header{
-	background-color: $green;
-	color: $white;
+	//background-color: rgba($themeColorMain, 1);
+	color: $themeColorMain;
+	border-bottom: solid 2px $themeColorLight;
+	box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
 	position: relative;
 	width: 100%;
 	padding: 15px 35px;

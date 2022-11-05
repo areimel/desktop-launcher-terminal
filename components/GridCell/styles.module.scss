@@ -13,13 +13,13 @@
 }
 
 .inner{
-	border: solid 5px $green;
+	border: solid 5px $themeColorMain;
 	position: relative;
 }
 
 .heading{
-	background-color: $green;
-	color: $white;
+	background-color: $themeColorMain;
+	color: $themeWhite;
 	//font-family: $font_display;
 	font-size: 20px;
 	line-height:1;
