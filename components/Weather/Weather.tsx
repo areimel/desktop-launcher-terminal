@@ -27,13 +27,13 @@ export default function Weather({
       todayRangeFontColor:  '#fff',
       todayDescFontColor:  '#fff',
       todayInfoFontColor:  '#fff',
-      todayIconColor:  'rgba(128,255,128,0.8)',
+      todayIconColor:  '#FFB000',
       forecastBackgroundColor:  'transparent',
-      forecastSeparatorColor:  'rgba(128,255,128,0.8)',
+      forecastSeparatorColor:  '#FFB000',
       forecastDateColor:  '#fff',
       forecastDescColor:  '#fff',
       forecastRangeColor:  '#fff',
-      forecastIconColor:  'rgba(128,255,128,0.8)',
+      forecastIconColor:  '#FFB000',
     };
 
   return (

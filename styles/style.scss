@@ -178,16 +178,16 @@ body {
 	box-sizing: border-box;
 	height: 100%;
 	background-color: #000;
-	background-image: radial-gradient(#11581e, #041607), url("/img/terminal-static-animated.gif");
+	background-image: radial-gradient($amberDark, $blackAmber), url("/img/terminal-static-animated.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: fixed;
 	font-family: $font_body;
-	color: $green;
+	color: $text_color;
 	font-size: 1.8rem;
 	line-height: 1.2;
 	//letter-spacing: 0.005em;
 	margin: 0;
 	padding: 0;
-	text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255,255,255,0.8);
+	text-shadow: 0 0 1ex $themeColorLight, 0 0 2ex $theme_color;
 }
