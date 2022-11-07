@@ -9,7 +9,7 @@ export default function FilterImage({
   return (
     <div className={styles.centerWrapper}>
       <div className={styles.FilterImage}>
-        <div className={styles.greenFilter}></div>
+        <div className={styles.colorFilter}></div>
         <img src={image} alt={alt} />
       </div>
     </div>    
