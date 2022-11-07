@@ -104,6 +104,7 @@ GENERAL
 			align-items: center;
 			flex-direction: row;
 
+
 			>li{
 				padding:  0 10px;
 			}
@@ -117,12 +118,14 @@ GENERAL
 			text-decoration: none;
 			padding: 8px 5px;
 			transition: .01s;
+			will-change: color, background-color;
 		}
 		a:hover,
 		a:focus {
 			color: #11581e;
 			background-color: #fff;
 			text-shadow: none;
+			//box-shadow: 0 0 1ex $themeColorMain, 0 0 2ex $themeColorMain;
 		}
 		a::before {
 			content: "[";
