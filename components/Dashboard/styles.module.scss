@@ -5,19 +5,21 @@
 /***** Dashboard *****/
 /***** ========== *****/
 
+$borderWidth: 4px;
+
 .Component{
 	display: flex;
 	flex-wrap: wrap;
-	border-top: solid 2px $themeColorLight;
-	border-left: solid 2px $themeColorLight;
-	box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
+	border-top: solid $borderWidth $themeColorLight;
+	border-left: solid $borderWidth $themeColorLight;
+	//box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
 }
 
 .Cell{
 	position: relative;
-	border-bottom: solid 2px $themeColorLight;
-	border-right: solid 2px $themeColorLight;
-	box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
+	border-bottom: solid $borderWidth $themeColorLight;
+	border-right: solid $borderWidth $themeColorLight;
+	//box-shadow: 0 0 7px $themeColorLight, 0 0 3px $themeWhite, inset 0 0 7px $themeColorLight, inset 0 0 3px $themeWhite;
 	padding: 35px;
 	/*display: flex;
 	flex-direction: column;
