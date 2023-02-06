@@ -9,9 +9,9 @@ export default function Header({
       <div>
         <header>
           <h1 className={styles.logo}>
-            Planet Caravan Studios
+            Model 5100
           </h1>
-          <p>DASHBOARD COMMAND MODULE</p>
+          <p>Central Control Terminal</p>
           {/*<ul>
             <li>A better way to Think.</li>
             <li>A better way to Live.</li>

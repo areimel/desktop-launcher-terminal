@@ -66,7 +66,7 @@ export default function Dashboard({
         width="40%"
       >
         <FilterImage
-          image="/img/daily-img/arboria.jpg"
+          image="/img/daily-img/given-1.jpg"
         />
       </Cell>
 

@@ -24,7 +24,7 @@
 		background-color: rgba($themeColorMain, 0.35);
 		filter: blur(10px);
 		pointer-events: none;
-		//box-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255,255,255,0.8);
+		box-shadow: 0 0 1ex #themeColorMain, 0 0 2px rgba(255,255,255,0.8);
 	}
 	img{
 		filter: grayscale(1) blur(2px);
