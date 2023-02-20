@@ -12,6 +12,7 @@ import GridCell from '@components/GridCell'
 // module components moved inside Dashboard component
 import Dashboard from '@components/Dashboard'
 import ThreeDashboard from '@components/ThreeDashboard'
+import AugmentedTest from '@components/AugmentedTest'
 
 
 //VARS
@@ -55,6 +56,12 @@ export default function Home(props) {
       </Head>
 
       <Dashboard/>
+
+      <br/>
+      <hr/>
+      <br/>
+
+      <AugmentedTest/>
 
       <br/>
       <hr/>

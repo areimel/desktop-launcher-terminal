@@ -1,7 +1,4 @@
-import "@styles/vars.scss";
-import "@styles/mixins.scss";
-import "@styles/fonts.scss";
-import "@styles/style.scss";
+
 import Head from 'next/head'
 import Layout from '@components/Layout/Layout'
 
@@ -14,6 +11,14 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/thumbs/thumbs.scss';
 import "@styles/sliders.scss";
 import "@styles/forms.scss";
+
+//AUGMENTED-UI
+import 'augmented-ui/augmented-ui.min.css';
+
+import "@styles/vars.scss";
+import "@styles/mixins.scss";
+import "@styles/fonts.scss";
+import "@styles/style.scss";
 
 function Application({ Component, pageProps }) {
   return (

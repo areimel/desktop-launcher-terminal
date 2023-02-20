@@ -1,0 +1,69 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** ========== *****/
+/***** Dashboard *****/
+/***** ========== *****/
+
+$borderWidth: 4px;
+$angleVal: 35deg;
+$nudge: 0.5vw;
+$scale: 90%;
+
+.AugmentedTest{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+	transform: 
+		rotateX(0deg) 
+		rotateY(0deg)
+		//scale($scale)
+	;
+
+	.row{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+.Cell{
+	position: relative;
+	width: 25vw;
+	aspect-ratio: 1/1;
+	//border: solid $borderWidth $themeColorMain;
+	margin: 0.5vw;
+	box-shadow: 0vw 0vw 2vw rgba($themeColorMain,0.25);
+	perspective: 50vw;
+  	transform-style: preserve-3d;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: rgba($blackAmber, 0.35);
+	
+	
+
+	//LEFT
+	&[data-augStyle="aug1"]{
+		--aug-tl: 5%;
+		--aug-tr: 5%;
+  		--aug-bl: 5%;
+		--aug-br: 5%;
+		--aug-br-inset2: 25%;
+	}
+	&[data-augStyle="MidLeft"]{
+		
+	}
+	&[data-augStyle="BottomLeft"]{
+		
+	}
+
+}
