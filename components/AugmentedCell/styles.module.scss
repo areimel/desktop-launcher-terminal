@@ -1,0 +1,150 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+/***** =============== *****/
+/***** Augmented Cells *****/
+/***** =============== *****/
+
+$borderWidth: 4px;
+$angleVal: 35deg;
+$nudge: 0.5vw;
+$scale: 90%;
+$headingHeight: 2em;
+$size1: clamp(320px, 50%, 800px);
+$size2: clamp(320px, 33.333%, 800px);
+$size3: clamp(320px, 25%, 800px);
+
+.outer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	&[data-augStyle="aug1"]{
+		width: $size1;
+		padding: 1em;
+	}
+	&[data-augStyle="aug2"]{
+		width: $size2;
+		padding: 1em;
+	}
+	&[data-augStyle="aug3"]{
+		width: $size3;
+		padding: 1em;
+	}
+}
+
+.AugmentedCell{
+	position: relative;
+	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-start;
+  	align-items: flex-start;
+  	flex-wrap: wrap;
+  	background-color: rgba($blackAmber, 0.35);
+	
+	.heading{
+		height: $headingHeight;
+		width: 100%;
+		//background: $amberDark;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.overflow{
+		overflow: auto;	
+		height:calc(100% - #{$headingHeight});
+		width: 100%;
+		padding: 1em;
+		&::-webkit-scrollbar {
+		  width: 1px;
+		}
+		&::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 6px rgba($themeColorLight, 0.3);
+		}
+		&::-webkit-scrollbar-thumb {
+		  background-color: $themeColorLight;
+		  outline: 1px solid $themeColorLight;
+		}
+	}
+
+	&[data-augStyle="aug1"]{
+		--aug-tl: 5%;
+		--aug-tr: 5%;
+  		--aug-bl: 5%;
+		--aug-br: 5%;
+		--aug-br-inset2: 25%;
+		$paddingPrimary: 1%;
+		$paddingInset: 7.5%;
+		padding-top: $paddingPrimary;
+		padding-bottom: $paddingPrimary;
+		padding-left: $paddingPrimary;
+		padding-right: $paddingInset;
+		width: 100%;
+		aspect-ratio: 1/1;
+	}
+	&[data-augStyle="aug2"]{
+		--aug-tl: 5%;
+		--aug-tr: 7%;
+  		--aug-bl: 5%;
+		--aug-br: 5%;
+		--aug-tr-inset2: 35%;
+		$paddingPrimary: 1%;
+		$paddingInset: 2.5%;
+		padding-top: 0;
+		padding-bottom: $paddingPrimary;
+		padding-left: $paddingPrimary;
+		padding-right: $paddingPrimary;
+		width: 100%;
+		aspect-ratio: 1/1;
+
+		.heading{
+			height: 8%;
+			width: 65%;
+			background: $amberDark;
+			color: $whiteAmber;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding-top: 5px;
+		}
+	}
+	&[data-augStyle="aug3"]{
+		--aug-tl: 5%;
+		--aug-tr: 7%;
+  		--aug-bl: 5%;
+		--aug-br: 5%;
+		--aug-tr-inset2: 35%;
+		$paddingPrimary: 1%;
+		$paddingInset: 2.5%;
+		padding-top: 0;
+		padding-bottom: $paddingPrimary;
+		padding-left: $paddingPrimary;
+		padding-right: $paddingPrimary;
+		width: 100%;
+		aspect-ratio: 1/1;
+
+		.heading{
+			height: 8%;
+			width: 65%;
+			background: $amberDark;
+			color: $amberLight;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding-top: 5px;
+		}
+	}
+	
+
+	//DEFAULTS
+
+}

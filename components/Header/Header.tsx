@@ -9,7 +9,7 @@ export default function Header({
       <div>
         <header>
           <h1 className={styles.logo}>
-            Model 5100
+            Ono-Sendai Model 5100
           </h1>
           <p>Central Control Terminal</p>
           {/*<ul>

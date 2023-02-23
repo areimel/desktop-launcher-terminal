@@ -1,7 +1,7 @@
 {
   "name": "ibm-5100-terminal-dashboard",
   "repository": "https://github.com/areimel/Holy-Mountain-Component-Library",
-  "description": "Component Library for the Holy Mountain Frontend Framework.",
+  "description": "Retro-style dashboard for everyday developer tools.",
   "version": "0.5.0",
   "homepage": "https://holy-mountain-component-library.netlify.app/",
   "private": false,

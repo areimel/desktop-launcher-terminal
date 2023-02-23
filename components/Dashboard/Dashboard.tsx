@@ -50,7 +50,6 @@ export default function Dashboard({
       >
         <DotBG>
           <DateTime/>
-          {/*<Weather/>*/}
         </DotBG>
       </Cell>
 
