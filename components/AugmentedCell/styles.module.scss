@@ -23,15 +23,15 @@ $size3: clamp(320px, 25%, 800px);
 
 	&[data-augStyle="aug1"]{
 		width: $size1;
-		padding: 1em;
+		//padding: 1em;
 	}
 	&[data-augStyle="aug2"]{
 		width: $size2;
-		padding: 1em;
+		//padding: 1em;
 	}
 	&[data-augStyle="aug3"]{
 		width: $size3;
-		padding: 1em;
+		//padding: 1em;
 	}
 }
 
