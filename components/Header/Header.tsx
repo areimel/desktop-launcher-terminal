@@ -11,7 +11,7 @@ export default function Header({
           <h1 className={styles.logo}>
             Ono-Sendai Model 5100
           </h1>
-          <p>Central Control Terminal</p>
+          <p>Model 5100</p>
           {/*<ul>
             <li>A better way to Think.</li>
             <li>A better way to Live.</li>

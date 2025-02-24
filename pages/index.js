@@ -28,8 +28,8 @@ export async function getStaticProps() {
 	  let author = "Alec Reimel"
 	  let authorTeam = "Planet Caravan Studios"
 	  let description ="\
-		This is the inital demo template for Holy Mountain frontend components.  \
-		Clone this page out for demoing new components.\
+		  This is the inital demo template for Holy Mountain frontend components.  \
+		  Clone this page out for demoing new components.\
 	  "
 	  let contentProps = 'N/A'
 	  let libraries = "N/A"
